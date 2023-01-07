@@ -1,10 +1,13 @@
 import { Box } from "@mui/material";
 import React from "react";
-
+import Post from "./Post";
 const Feed = () => {
   return (
-    <Box bgcolor="pink" p={2} flex={4}>
-      SideBar
+    <Box p={2} flex={4} spacing={4}>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </Box>
   );
 };

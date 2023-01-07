@@ -12,9 +12,9 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import SearchIcon from "@mui/icons-material/Search";
-import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { Avatar } from "@mui/material";
+import { Message } from "@mui/icons-material";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -121,7 +121,7 @@ export default function Nav() {
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
-            <MailIcon />
+            <Message />
           </Badge>
         </IconButton>
         <p>Messages</p>
@@ -154,8 +154,8 @@ export default function Nav() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1, marginBottom: 8 }}>
+      <AppBar position="fixed">
         <Toolbar>
           <IconButton
             size="large"
@@ -191,7 +191,7 @@ export default function Nav() {
               color="inherit"
             >
               <Badge badgeContent={4} color="error">
-                <MailIcon />
+                <Message />
               </Badge>
             </IconButton>
             <IconButton
@@ -225,7 +225,7 @@ export default function Nav() {
               color="inherit"
             >
               <Avatar alt="Shajadul" src={Image} />
-              <Typography
+              {/* <Typography
                 sx={{ display: { xs: "none", sm: "block" } }}
                 marginLeft="5px"
                 variant="h6"
@@ -233,7 +233,7 @@ export default function Nav() {
                 component="p"
               >
                 Shajadul
-              </Typography>
+              </Typography> */}
             </IconButton>
           </Box>
         </Toolbar>
