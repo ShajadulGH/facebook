@@ -53,9 +53,10 @@ function Add() {
         aria-describedby="modal-modal-description"
       >
         <Box
+          bgcolor={"background.default"}
+          color={"text.primary"}
           width="400px"
           height="280px"
-          bgcolor="white"
           borderRadius={5}
           p={5}
         >
